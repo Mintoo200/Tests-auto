@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lighthouse": "lhci autorun"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@testing-library/cypress": "^10.0.2",
     "cypress": "^13.14.1"
+  },
+  "dependencies": {
+    "@lhci/cli": "^0.14.0"
   }
 }
