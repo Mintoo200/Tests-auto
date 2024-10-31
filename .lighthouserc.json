@@ -1,0 +1,20 @@
+{
+  "ci": {
+    "collect": {
+      "numberOfRuns": 1,
+      "url": [
+        "https://beta.gouv.fr/",
+        "https://beta.gouv.fr/recherche?q=foo",
+        "https://beta.gouv.fr/incubateurs/",
+        "https://medium.com/"
+      ]
+    },
+    "assert": {
+      "assertions": {
+        "categories:performance": "off",
+        "categories:pwa": "off",
+        "categories:accessibility": ["error", { "minScore": 1 }]
+      }
+    }
+  }
+}
